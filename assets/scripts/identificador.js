@@ -14,6 +14,132 @@ const departamentos = {
         '0202': 'Morazán',
         }
     },
+    '03': {
+        nombre: 'Sacatepéquez',
+        municipios: {
+        'null': 'null',
+        }
+    },
+    '04': {
+        nombre: 'Chimaltenango',
+        municipios: {
+        'null': 'null',
+        }
+    },
+    '05': {
+        nombre: 'Escuintla',
+        municipios: {
+        'null': 'null',
+        }
+    },
+    '06': {
+        nombre: 'Santa Rosa',
+        municipios: {
+        'null': 'null',
+        }
+    },
+    '07': {
+        nombre: 'Sololá',
+        municipios: {
+        'null': 'null',
+        }
+    },
+    '08': {
+        nombre: 'Totonicapán',
+        municipios: {
+        'null': 'null',
+        }
+    },
+    '09': {
+        nombre: 'Quetzaltenango',
+        municipios: {
+        'null': 'null',
+        }
+    },
+    '10': {
+        nombre: 'Suchitepéquez',
+        municipios: {
+        'null': 'null',
+        }
+    },
+    '11': {
+        nombre: 'Retalhuleu',
+        municipios: {
+        'null': 'null',
+        }
+    },
+    '12': {
+        nombre: 'San Marcos',
+        municipios: {
+        'null': 'null',
+        }
+    },
+    '13': {
+        nombre: 'Huehuetenango',
+        municipios: {
+        'null': 'null',
+        }
+    },
+    '14': {
+        nombre: 'Quiché',
+        municipios: {
+        'null': 'null',
+        }
+    },
+    '15': {
+        nombre: 'Baja Verapaz',
+        municipios: {
+        'null': 'null',
+        }
+    },
+    '16': {
+        nombre: 'Alta Verapaz',
+        municipios: {
+        'null': 'null',
+        }
+    },
+    '17': {
+        nombre: 'Petén',
+        municipios: {
+        'null': 'null',
+        }
+    },
+    '18': {
+        nombre: 'Izabal',
+        municipios: {
+        'null': 'null',
+        }
+    },
+    '19': {
+        nombre: 'Zacapa',
+        municipios: {
+        'null': 'null',
+        }
+    },
+    '20': {
+        nombre: 'Chiquimula',
+        municipios: {
+        'null': 'null',
+        }
+    },
+    '21': {
+        nombre: 'Chiquimula',
+        municipios: {
+        'null': 'null',
+        }
+    },
+    '22': {
+        nombre: 'Jalapa',
+        municipios: {
+        'null': 'null',
+        }
+    },
+    '23': {
+        nombre: 'Jutiapa',
+        municipios: {
+        'null': 'null',
+        }
+    },
 };
 
 const $inputDepartamento = document.getElementById("departamento");
