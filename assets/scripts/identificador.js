@@ -25,17 +25,19 @@ function obtenerDepartamentoYmunicipio(codigoDPI){
     const codigoDepartamento = codigoDPI.substring(0, 2);
     const codigoMunicipio = codigoDPI.substring(0, 4);
 
-    if (codigoDPI.length >= 2) {
-        const departamento = departamentos[codigoDepartamento];
+    const departamento = departamentos[codigoDepartamento];
 
-        if (departamento) {
-            resultado.departamento = departamento.nombre;
+    if(departamento){
+        resultado.departamento = departamento.nombre;
+        const municipio = departamento.municipios[codigoMunicipio];
 
-            if (codigoDPI.length >= 4) {
-                const municipio = departamento.municipios[codigoMunicipio];
-                resultado.municipio = municipio;
-            }
+        if (municipio) {
+            resultado.municipio = municipio;
+        }else{
+            return resultado;
         }
+    }else{
+        return resultado;
     }
     return resultado;
 }
