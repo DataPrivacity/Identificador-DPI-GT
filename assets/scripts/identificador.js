@@ -172,7 +172,6 @@ function obtenerDepartamentoYmunicipio(codigoDPI){
     }else{
         return resultado;
     }
-    console.table(resultado);
     return resultado;
 }
 
@@ -195,9 +194,9 @@ function mostrarResultado({ departamento_codigo, departamento_nombre, municipio_
     municipio.text = `${municipio_nombre}`;
 }
 
-function limpiarResultado(){
-    $inputDepartamento.value = '';
-    $inputDepartamento.placeholder = '';
-    $inputMunicipio.value = '';
-    $inputMunicipio.placeholder = '';
+function limpiarResultado() {
+    $inputDepartamento.options[0].value = '';
+    $inputDepartamento.options[0].text = '';
+    $inputMunicipio.options[0].value = '';
+    $inputMunicipio.options[0].text = '';
 }
