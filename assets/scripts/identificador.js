@@ -147,24 +147,32 @@ const $inputMunicipio = document.getElementById("municipio");
 const $input = document.getElementById("dpi");
 
 function obtenerDepartamentoYmunicipio(codigoDPI){
-    let resultado = { departamento: 'Desconocido', municipio: 'Desconocido' };
+    let resultado = {
+        departamento_codigo: '',
+        departamento_nombre: 'Desconocido',
+        municipio_codigo: '',
+        municipio_nombre: 'Desconocido'
+    };
     const codigoDepartamento = codigoDPI.substring(0, 2);
     const codigoMunicipio = codigoDPI.substring(0, 4);
 
     const departamento = departamentos[codigoDepartamento];
 
     if(departamento){
-        resultado.departamento = departamento.nombre;
+        resultado.departamento_codigo = codigoDepartamento;
+        resultado.departamento_nombre = departamento.nombre;
         const municipio = departamento.municipios[codigoMunicipio];
 
         if (municipio) {
-            resultado.municipio = municipio;
+            resultado.municipio_codigo = codigoMunicipio;
+            resultado.municipio_nombre = municipio;
         }else{
             return resultado;
         }
     }else{
         return resultado;
     }
+    console.table(resultado);
     return resultado;
 }
 
@@ -178,12 +186,18 @@ $input.addEventListener("input", function(e){
     }
 });
 
-function mostrarResultado({ departamento, municipio }){
-    $inputDepartamento.value = `${departamento}`;
-    $inputMunicipio.value = `${municipio}`;
+function mostrarResultado({ departamento_codigo, departamento_nombre, municipio_codigo, municipio_nombre }){
+    const departamento = $inputDepartamento.options[0];
+    departamento.value = `${departamento_codigo}`;
+    departamento.text = `${departamento_nombre}`;
+    const municipio = $inputMunicipio.options[0];
+    municipio.value = `${municipio_codigo}`;
+    municipio.text = `${municipio_nombre}`;
 }
 
 function limpiarResultado(){
     $inputDepartamento.value = '';
+    $inputDepartamento.placeholder = '';
     $inputMunicipio.value = '';
+    $inputMunicipio.placeholder = '';
 }
