@@ -46,4 +46,12 @@ VALUES (1, 'Santa Catarina Pinula'),
 (1, 'Amatitlán'),
 (1, 'Villa Nueva'),
 (1, 'Villa Canales'),
-(1, 'San Miguel Petapa');
+(1, 'San Miguel Petapa'),
+(2, 'Guastatoya'),
+(2, 'Morazán'),
+(2, 'San Agustín Acasaguastlán'),
+(2, 'San Cristóbal Acasaguastlán'),
+(2, 'El Jícaro'),
+(2, 'Sansare'),
+(2, 'Sanarate'),
+(2, 'San Antonio La Paz');
