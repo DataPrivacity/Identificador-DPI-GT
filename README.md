@@ -24,6 +24,10 @@ El usuario ingresa su número de DPI y la aplicación realiza lo siguiente:
 - JavaScript
 - [Otras tecnologías/librerías/frameworks]
 
+## Visualización del Proyecto
+
+Puede visualizar y utilizar el Identificador-DPI-GT directamente desde su navegador a través del siguiente enlace: [https://dataprivacity.github.io/Identificador-DPI-GT/](https://dataprivacity.github.io/Identificador-DPI-GT/).
+
 ## Instalación
 
 Para instalar y ejecutar este proyecto localmente, siga estos pasos:
@@ -37,7 +41,9 @@ Las contribuciones son bienvenidas. Si desea contribuir al proyecto, por favor h
 
 ## Licencia
 
-Este proyecto está bajo la Licencia [MIT](LICENSE).
+`Identificador-DPI-GT` está bajo la GNU General Public License v3.0, lo que significa que puedes modificarlo, distribuirlo y usarlo incluso para uso comercial siempre y cuando sigas los términos y condiciones de esta licencia.
+
+Para más detalles, vea el archivo [LICENSE](LICENSE) incluido en este repositorio o lea la [GNU General Public License version 3](https://www.gnu.org/licenses/gpl-3.0.html) en línea.
 
 ## Agradecimientos
 
