@@ -1,6 +1,6 @@
 const departamentos = {
     '01': {
-        nombre: 'Guatemala',
+        nombre: 'GUATEMALA',
         municipios: {
             '0101': 'GUATEMALA',
             '0102': 'SANTA CATARINA PINULA',
@@ -22,7 +22,7 @@ const departamentos = {
         }
     },
     '02': {
-        nombre: 'El Progreso',
+        nombre: 'EL PROGRESO',
         municipios: {
             '0201': 'GUASTATOYA',
             '0202': 'MORAZAN',
@@ -35,7 +35,7 @@ const departamentos = {
         }
     },
     '03': {
-        nombre: 'Sacatepéquez',
+        nombre: 'SACATEPEQUEZ',
         municipios: {
             '0301': 'ANTIGUA',
             '0302': 'JOCOTENANGO',
@@ -56,7 +56,7 @@ const departamentos = {
         }
     },
     '04': {
-        nombre: 'Chimaltenango',
+        nombre: 'CHIMALTENANGO',
         municipios: {
             '0401': 'CHIMALTENANGO',
             '0402': 'SAN JOSE POAQUIL',
@@ -77,7 +77,7 @@ const departamentos = {
         }
     },
     '05': {
-        nombre: 'Escuintla',
+        nombre: 'ESCUINTLA',
         municipios: {
             '0501': 'ESCUINTLA',
             '0502': 'SANTA LUCIA COTZUMALGUAPA',
@@ -95,7 +95,7 @@ const departamentos = {
         }
     },
     '06': {
-        nombre: 'Santa Rosa',
+        nombre: 'SANTA ROSA',
         municipios: {
             '0601': 'CUILAPA',
             '0602': 'BARBERENA',
@@ -114,7 +114,7 @@ const departamentos = {
         }
     },
     '07': {
-        nombre: 'Sololá',
+        nombre: 'SOLOLA',
         municipios: {
             '0701': 'SOLOLA',
             '0702': 'SAN JOSE CHACAYA',
@@ -138,7 +138,7 @@ const departamentos = {
         }
     },
     '08': {
-        nombre: 'Totonicapán',
+        nombre: 'TOTONICAPAN',
         municipios: {
             '0801': 'TOTONICAPAN',
             '0802': 'SAN CRISTOBAL TOTONICAPAN',
@@ -151,7 +151,7 @@ const departamentos = {
         }
     },
     '09': {
-        nombre: 'Quetzaltenango',
+        nombre: 'QUETZALTENANGO',
         municipios: {
             '0901': 'QUETZALTENANGO',
             '0902': 'SALCAJA',
@@ -180,7 +180,7 @@ const departamentos = {
         }
     },
     '10': {
-        nombre: 'Suchitepéquez',
+        nombre: 'SUCHITEPEQUEZ',
         municipios: {
             '1001': 'MAZATENANGO',
             '1002': 'CUYOTENANGO',
@@ -205,7 +205,7 @@ const departamentos = {
         }
     },
     '11': {
-        nombre: 'Retalhuleu',
+        nombre: 'RETALHULEU',
         municipios: {
             '1101': 'RETALHULEU',
             '1102': 'SAN SEBASTIAN',
@@ -219,7 +219,7 @@ const departamentos = {
         }
     },
     '12': {
-        nombre: 'San Marcos',
+        nombre: 'SAN MARCOS',
         municipios: {
             '1201': 'SAN MARCOS',
             '1202': 'SAN PEDRO SACATEPEQUEZ',
@@ -253,7 +253,7 @@ const departamentos = {
         }
     },
     '13': {
-        nombre: 'Huehuetenango',
+        nombre: 'HUEHUETENANGO',
         municipios: {
             '1301': 'HUEHUETENANGO',
             '1302': 'CHIANTLA',
@@ -290,7 +290,7 @@ const departamentos = {
         }
     },
     '14': {
-        nombre: 'El Quiché',
+        nombre: 'EL QUICHE',
         municipios: {
             '1401': 'SANTA CRUZ DEL QUICHE',
             '1402': 'CHICHE',
@@ -317,7 +317,7 @@ const departamentos = {
         }
     },
     '15': {
-        nombre: 'Baja Verapaz',
+        nombre: 'BAJA VERAPAZ',
         municipios: {
             '1501': 'SALAMA',
             '1502': 'SAN MIGUEL CHICAJ',
@@ -330,7 +330,7 @@ const departamentos = {
         }
     },
     '16': {
-        nombre: 'Alta Verapaz',
+        nombre: 'ALTA VERAPAZ',
         municipios: {
             '1601': 'COBAN',
             '1602': 'SANTA CRUZ VERAPAZ',
@@ -352,7 +352,7 @@ const departamentos = {
         }
     },
     '17': {
-        nombre: 'El Petén',
+        nombre: 'EL PETEN',
         municipios: {
             '1701': 'FLORES',
             '1702': 'SAN JOSE',
@@ -369,7 +369,7 @@ const departamentos = {
         }
     },
     '18': {
-        nombre: 'Izabal',
+        nombre: 'IZABAL',
         municipios: {
             '1801': 'PUERTO BARRIOS',
             '1802': 'LIVINGSTON',
@@ -379,7 +379,7 @@ const departamentos = {
         }
     },
     '19': {
-        nombre: 'Zacapa',
+        nombre: 'ZACAPA',
         municipios: {
             '1901': 'ZACAPA',
             '1902': 'ESTANZUELA',
@@ -394,7 +394,7 @@ const departamentos = {
         }
     },
     '20': {
-        nombre: 'Chiquimula',
+        nombre: 'CHIQUIMULA',
         municipios: {
             '2001': 'CHIQUIMULA',
             '2002': 'SAN JOSE LA ARADA',
@@ -410,7 +410,7 @@ const departamentos = {
         }
     },
     '21': {
-        nombre: 'Jalapa',
+        nombre: 'JALAPA',
         municipios: {
             '2101': 'JALAPA',
             '2102': 'SAN PEDRO PINULA',
@@ -422,7 +422,7 @@ const departamentos = {
         }
     },
     '22': {
-        nombre: 'Jutiapa',
+        nombre: 'JUTIAPA',
         municipios: {
             '2201': 'JUTIAPA',
             '2202': 'EL PROGRESO',
