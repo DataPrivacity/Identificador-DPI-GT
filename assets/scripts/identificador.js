@@ -447,17 +447,17 @@ const departamentos = {
 
 const $inputDepartamento = document.getElementById("departamento");
 const $inputMunicipio = document.getElementById("municipio");
-const $input = document.getElementById("dpi");
+const $input = document.getElementById("cui");
 
-function obtenerDepartamentoYmunicipio(codigoDPI){
+function obtenerDepartamentoYmunicipio(cui){
     let resultado = {
         departamento_codigo: '',
         departamento_nombre: 'Desconocido',
         municipio_codigo: '',
         municipio_nombre: 'Desconocido'
     };
-    const codigoDepartamento = codigoDPI.substring(0, 2);
-    const codigoMunicipio = codigoDPI.substring(0, 4);
+    const codigoDepartamento = cui.substring(0, 2);
+    const codigoMunicipio = cui.substring(0, 4);
 
     const departamento = departamentos[codigoDepartamento];
 
@@ -479,9 +479,9 @@ function obtenerDepartamentoYmunicipio(codigoDPI){
 }
 
 $input.addEventListener("input", function(e){
-    let codigoDPI = e.target.value;
-    if(codigoDPI.length >= 2){
-        const resultado = obtenerDepartamentoYmunicipio(codigoDPI);
+    let cui = e.target.value;
+    if(cui.length >= 2){
+        const resultado = obtenerDepartamentoYmunicipio(cui);
         mostrarResultado(resultado);
     }else{
         limpiarResultado();
