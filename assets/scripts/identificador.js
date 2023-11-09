@@ -456,8 +456,10 @@ function obtenerDepartamentoYmunicipio(cui){
         municipio_codigo: '',
         municipio_nombre: 'Desconocido'
     };
-    const codigoDepartamento = cui.substring(0, 2);
-    const codigoMunicipio = cui.substring(0, 4);
+    const codigoDepartamento = cui.substring(9, 11);
+    const codigoMunicipio = cui.substring(9, 13);
+    console.table(codigoDepartamento);
+    console.table(codigoMunicipio);
 
     const departamento = departamentos[codigoDepartamento];
 
@@ -480,7 +482,7 @@ function obtenerDepartamentoYmunicipio(cui){
 
 $input.addEventListener("input", function(e){
     let cui = e.target.value;
-    if(cui.length >= 2){
+    if(cui.length >= 11){
         const resultado = obtenerDepartamentoYmunicipio(cui);
         mostrarResultado(resultado);
     }else{
