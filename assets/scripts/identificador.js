@@ -458,9 +458,7 @@ function obtenerDepartamentoYmunicipio(cui){
     };
     const codigoDepartamento = cui.substring(9, 11);
     const codigoMunicipio = cui.substring(9, 13);
-    console.table(codigoDepartamento);
-    console.table(codigoMunicipio);
-
+    
     const departamento = departamentos[codigoDepartamento];
 
     if(departamento){
@@ -482,7 +480,15 @@ function obtenerDepartamentoYmunicipio(cui){
 
 $input.addEventListener("input", function(e){
     let cui = e.target.value;
-    if(cui.length >= 11){
+    
+    // Verifica que el CUI tenga la longitud correcta y contenga solo números ^\d{11,13}$ explicado:
+
+    // ^ inicia la coincidencia
+    // \d es un dígito
+    // {11,13} entre 11 y 13 dígitos
+    // $ finaliza la coincidencia
+
+    if(cui.match(/^\d{11,13}$/)){
         const resultado = obtenerDepartamentoYmunicipio(cui);
         mostrarResultado(resultado);
     }else{
