@@ -444,10 +444,9 @@ const departamentos = {
         }
     },
 };
-
 const $inputDepartamento = document.getElementById("departamento");
 const $inputMunicipio = document.getElementById("municipio");
-const $input = document.getElementById("cui");
+
 
 function obtenerDepartamentoYmunicipio(cui){
     let resultado = {
@@ -478,7 +477,26 @@ function obtenerDepartamentoYmunicipio(cui){
     return resultado;
 }
 
-$input.addEventListener("input", function(e){
+
+function mostrarResultado({ departamento_codigo, departamento_nombre, municipio_codigo, municipio_nombre }){
+    const departamento = $inputDepartamento.options[0];
+    departamento.value = `${departamento_codigo}`;
+    departamento.text = `${departamento_nombre}`;
+    const municipio = $inputMunicipio.options[0];
+    municipio.value = `${municipio_codigo}`;
+    municipio.text = `${municipio_nombre}`;
+}
+
+
+function limpiarResultado() {
+    $inputDepartamento.options[0].value = '';
+    $inputDepartamento.options[0].text = '';
+    $inputMunicipio.options[0].value = '';
+    $inputMunicipio.options[0].text = '';
+}
+
+
+export function validacion(e){
     let cui = e.target.value;
     
     // Verifica que el CUI tenga la longitud correcta y contenga solo números ^\d{11,13}$ explicado:
@@ -494,20 +512,4 @@ $input.addEventListener("input", function(e){
     }else{
         limpiarResultado();
     }
-});
-
-function mostrarResultado({ departamento_codigo, departamento_nombre, municipio_codigo, municipio_nombre }){
-    const departamento = $inputDepartamento.options[0];
-    departamento.value = `${departamento_codigo}`;
-    departamento.text = `${departamento_nombre}`;
-    const municipio = $inputMunicipio.options[0];
-    municipio.value = `${municipio_codigo}`;
-    municipio.text = `${municipio_nombre}`;
-}
-
-function limpiarResultado() {
-    $inputDepartamento.options[0].value = '';
-    $inputDepartamento.options[0].text = '';
-    $inputMunicipio.options[0].value = '';
-    $inputMunicipio.options[0].text = '';
 }
